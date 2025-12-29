@@ -6,5 +6,6 @@ if a == 0:
     else:
         print("Phương trình vô nghiệm")
 else:
-    print("Phương trình có một nghiệm")
+    x = -b / a
+    print(f"Phương trình có một nghiệm: x = {x:.2f}")
     
