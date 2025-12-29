@@ -1,0 +1,22 @@
+def chia_het_2_va_3(x):
+    return x % 2 == 0 and x % 3 == 0
+
+N = int(input("Nhập số lượng phần tử N: "))
+if N <= 0:
+    print("N phải là số nguyên dương.")
+else:
+    ds = []
+    for i in range(N):
+        so = int(input(f"Nhập phần tử thứ {i+1}: "))
+        ds.append(so)
+    print("Danh sách vừa nhập:", ds)
+    
+    ket_qua = []
+    for num in ds:
+        if chia_het_2_va_3(num):
+            ket_qua.append(num)
+    
+    if ket_qua:
+        print("Các phần tử chia hết cho cả 2 và 3:", ket_qua)
+    else:
+        print("Không có phần tử nào.")
